@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:900');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.custom-select {
+  position: relative;
+  /* font-family: Arial; */
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: Transparent;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color:  #f50057 transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent  #f50057 transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color:  #f50057;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  border-color: #f50057;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: Transparent;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  /* width: 30%; */
+  padding: 10px;
+  font-size: 1vw;
+  font-weight: 900;
+  color: #f50057;
+  background-color: Transparent;
+  border: 2px solid #f50057;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.25s ease;
+}
+
+.button:hover {
+    border-radius: 25px;
+}
+
+.button:active {
+    border-radius: 1px;
+
+    vertical-align: center;
+    /* width: 32%; */
+    padding: 17px;
+    outline: none;
+}
+
+.button:focus {
+  outline:0;
+}
+
+.inputAnswer {
+  border-color:  #f50057;
+}
+
+.inputAnswer:active {
+    outline: none;
+}
+
+.inputAnswer:focus {
+  outline:0;
+}
+
+.inputAnswer:focus::placeholder {
+  color: transparent;
+}
+
+.myDiv {
+    align: center;
+    border: 2px solid #f50057;
+    text-align: center;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
