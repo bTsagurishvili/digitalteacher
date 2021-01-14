@@ -13,7 +13,9 @@ input::-webkit-inner-spin-button {
 
 .custom-select {
   position: relative;
-  /* font-family: Arial; */
+  font-family: Arial;
+  width:calc(15vw + 60px);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .custom-select select {
@@ -21,30 +23,31 @@ input::-webkit-inner-spin-button {
 }
 
 .select-selected {
-  background-color: Transparent;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 /*style the arrow inside the select element:*/
 .select-selected:after {
   position: absolute;
   content: "";
-  top: 14px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   width: 0;
   height: 0;
-  border: 6px solid transparent;
+  border: 1vw solid transparent;
   border-color:  #f50057 transparent transparent transparent;
 }
 
 /*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent  #f50057 transparent;
-  top: 7px;
+  top: 20px;
 }
 
 /*style the items (options), including the selected item:*/
 .select-items div,.select-selected {
   color:  #f50057;
+  background-color:rgba(255, 255, 255, 0.9);
   padding: 8px 16px;
   border: 2px solid transparent;
   border-color: #f50057;
@@ -55,7 +58,7 @@ input::-webkit-inner-spin-button {
 /*style items (options):*/
 .select-items {
   position: absolute;
-  background-color: Transparent;
+  background-color: rgba(255, 255, 255, 0.7);
   top: 100%;
   left: 0;
   right: 0;
@@ -68,14 +71,14 @@ input::-webkit-inner-spin-button {
 }
 
 .select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(248, 248, 248, 0.8);
 }
 
 .button {
   /* width: 30%; */
   padding: 7px;
-  font-size: 1vw;
-  font-weight: 900;
+  font-size: clamp(7px, 3vw, 20px);
+  font-weight: 500;
   color: #f50057;
   background-color: Transparent;
   border: 2px solid #f50057;
@@ -102,7 +105,9 @@ input::-webkit-inner-spin-button {
 }
 
 .inputAnswer {
-  width: 150px;
+  width: calc(20vw + 80px);
+  font-size:  clamp(7px, 3vw, 20px);
+  /*calc(12px + 16 * (100vw / 1280)); */
   border-color:  #f50057;
 }
 
@@ -121,13 +126,13 @@ input::-webkit-inner-spin-button {
 .myDiv {
     align: center;
     border: 2px solid #f50057;
-    font-size: calc(12px + 16 * (100vw / 1280));
+    font-size: clamp(7px, 3vw, 20px);
+    /*calc(12px + 16 * (100vw / 1280))  სამუშაო   */
     text-align: center;
 }
 
 .center {
   margin: auto;
-  width: 80vw;
-
+  width: clamp(250px, 80vw, 1024px);
   padding: 10px;
 }
