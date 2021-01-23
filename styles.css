@@ -124,8 +124,12 @@ input::-webkit-inner-spin-button {
 }
 
 .myDiv {
+    border: 2px;
+    border-radius: 5px;
+    border-style: solid solid none solid;
     align: center;
-    border: 2px solid #f50057;
+    color: #00122B;
+    border-color: #f50057;
     font-size: clamp(7px, 3vw, 20px);
     /*calc(12px + 16 * (100vw / 1280))  სამუშაო   */
     text-align: center;
@@ -134,5 +138,21 @@ input::-webkit-inner-spin-button {
 .center {
   margin: auto;
   width: clamp(250px, 80vw, 1024px);
-  padding: 10px;
+  padding: 5vw 1vw 0vw 1vw;
+}
+
+.footer {
+    margin: 10vw 0vw -0.5vw 5vw;
+    font-family: sans-serif;
+    font-weight: 10;
+    font-size: clamp(10px, 1vw, 15px);
+    color: #00122B;
+    text-align: right;
+}
+
+.footerfonstyle {
+  font-family: sans-serif;
+  font-weight: 10;
+  font-size: clamp(10px, 1vw, 15px);
+  color: #00122B;
 }
