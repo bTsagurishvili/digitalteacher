@@ -75,7 +75,7 @@ input::-webkit-inner-spin-button {
 }
 
 .button {
-  /* width: 30%; */
+  margin: 1px;
   padding: 7px;
   font-size: clamp(7px, 3vw, 20px);
   font-weight: 500;
