@@ -40,6 +40,7 @@ input::-webkit-inner-spin-button {
 
 /*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
+  border: 1vw solid transparent;
   border-color: transparent transparent  #f50057 transparent;
   top: 20px;
 }
@@ -75,6 +76,7 @@ input::-webkit-inner-spin-button {
 }
 
 .button {
+  /* width: 30%; */
   margin: 1px;
   padding: 7px;
   font-size: clamp(7px, 3vw, 20px);
@@ -143,7 +145,7 @@ input::-webkit-inner-spin-button {
 
 .footer {
   background-color : Window;
-    margin: 10vw 0vw -0.5vw 5vw;
+    margin: 10vw 1vw -0.7vw 36vw;
     font-family: sans-serif;
     font-weight: 10;
     font-size: clamp(10px, 1vw, 15px);
