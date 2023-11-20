@@ -1,10 +1,10 @@
 <?php
 
-$name = $_POST['name'];
+// $name = $_POST['name'];
 
-$phone = $_POST['tel'];
+// $phone = $_POST['tel'];
 
-$email = $_POST['email'];
+// $email = $_POST['email'];
 
 $message = $_POST['message'];
 
@@ -12,9 +12,9 @@ $message = $_POST['message'];
 
 $to      = 'b.tsagurishvili@gmail.com';
 
-$subject = 'Новый отклик с сайта';
+$subject = 'მაილი წარმატებით გაიგზავნა';
 
-$message = "Имя: " . $name. ", \n Телефон: " . $phone. ", \n Email: " . $email. ", \n Сообщение: " . $message;
+$message =  "შეტყობინება: " . $message;
 
 $headers = 'From: site@example.com' . "\r\n" .
 
