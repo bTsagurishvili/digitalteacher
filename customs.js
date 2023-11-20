@@ -5,9 +5,9 @@ const sendCallBut = document.querySelector('#send_call');
 		e.preventDefault();
 		
 		
-		const tel = document.querySelector('#phone2').value;
-		const name = document.querySelector('#name').value;
-		const email = document.querySelector('#email').value;
+		// const tel = document.querySelector('#phone2').value;
+		// const name = document.querySelector('#name').value;
+		// const email = document.querySelector('#email').value;
 		const message = document.querySelector('#comment').value;
 		
 		
@@ -21,16 +21,16 @@ const sendCallBut = document.querySelector('#send_call');
 							? 'Сообщение отправленно' 
 							: 'შეტყობინება გაგზავნილია, დაელოდეთ დაგიკავშირდებით';
 			
-		if(tel.length == 0 && email.length == 0) {
-			alertWindow.style.display = 'block';
-			const text = document.createTextNode(errorMessage);
-			alertWindow.appendChild(text);
+		// if(tel.length == 0 && email.length == 0) {
+		// 	alertWindow.style.display = 'block';
+		// 	const text = document.createTextNode(errorMessage);
+		// 	alertWindow.appendChild(text);
 			
-		} else {
+		// } else {
 			var params = new URLSearchParams(); 
-			params.set('tel', tel);
-			params.set('name', name);
-			params.set('email', email);
+			// params.set('tel', tel);
+			// params.set('name', name);
+			// params.set('email', email);
 			params.set('message', message);
 
 			fetch('/send_email.php', {
@@ -44,7 +44,7 @@ const sendCallBut = document.querySelector('#send_call');
 			const text = document.createTextNode(successMesage);
 			alertWindow.appendChild(text);
 			
-		}
+		//}
 
 	});
 	
