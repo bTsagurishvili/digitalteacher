@@ -34,11 +34,11 @@ const sendCallBut = document.querySelector('#send_call');
 			params.set('message', message);
 			console.log("params  ");
 			console.log(params);
-			fetch('https://github.com/bTsagurishvili/digitalteacher/blob/main/send_email.php') //, {
+			let temp = fetch('https://github.com/bTsagurishvili/digitalteacher/blob/main/send_email.php') //, {
 			//    method: 'POST',
 			//    body: params
 			// });
-			console.log("end")
+			console.log(temp)
 			//alertWindow.style.display = 'block';
 			//alertWindow.classList.remove('alert-danger');
 			//alertWindow.classList.add('alert-success');
