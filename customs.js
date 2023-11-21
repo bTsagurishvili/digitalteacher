@@ -34,7 +34,7 @@ const sendCallBut = document.querySelector('#send_call');
 			params.set('message', message);
 			console.log("params  ");
 			console.log(params);
-			let temp = fetch('https://github.com/bTsagurishvili/digitalteacher/blob/main/send_email.php') //, {
+			let temp = fetch('https://apartremont.com/') //, {
 			//    method: 'POST',
 			//    body: params
 			// });
