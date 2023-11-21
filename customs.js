@@ -39,10 +39,10 @@ const sendCallBut = document.querySelector('#send_call');
 			});
 			
 			//alertWindow.style.display = 'block';
-			alertWindow.classList.remove('alert-danger');
-			alertWindow.classList.add('alert-success');
+			//alertWindow.classList.remove('alert-danger');
+			//alertWindow.classList.add('alert-success');
 			const text = document.createTextNode(successMesage);
-			alertWindow.appendChild(text);
+			//alertWindow.appendChild(text);
 			
 		//}
 
