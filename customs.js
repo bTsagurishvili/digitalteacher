@@ -32,16 +32,17 @@ const sendCallBut = document.querySelector('#send_call');
 			// params.set('name', name);
 			// params.set('email', email);
 			params.set('message', message);
-
-			fetch('/send_email.php', {
-			   method: 'POST',
-			   body: params
-			});
-			
+			console.log("params  ");
+			console.log(params);
+			fetch('/send_email.php') //, {
+			//    method: 'POST',
+			//    body: params
+			// });
+			console.log("end")
 			//alertWindow.style.display = 'block';
 			//alertWindow.classList.remove('alert-danger');
 			//alertWindow.classList.add('alert-success');
-			const text = document.createTextNode(successMesage);
+			//const text = document.createTextNode(successMesage);
 			//alertWindow.appendChild(text);
 			
 		//}
