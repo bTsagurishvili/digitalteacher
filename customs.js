@@ -34,7 +34,7 @@ const sendCallBut = document.querySelector('#send_call');
 			params.set('message', message);
 			console.log("params  ");
 			console.log(params);
-			fetch('/send_email.php') //, {
+			fetch('https://github.com/bTsagurishvili/digitalteacher/blob/main/send_email.php') //, {
 			//    method: 'POST',
 			//    body: params
 			// });
