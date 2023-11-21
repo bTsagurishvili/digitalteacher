@@ -6,7 +6,7 @@
 
 // $email = $_POST['email'];
 
-$message = "test"//$_POST['message'];
+$message = $_POST['message'];
 
 
 
