@@ -38,7 +38,7 @@ const sendCallBut = document.querySelector('#send_call');
 			   body: params
 			});
 			
-			alertWindow.style.display = 'block';
+			//alertWindow.style.display = 'block';
 			alertWindow.classList.remove('alert-danger');
 			alertWindow.classList.add('alert-success');
 			const text = document.createTextNode(successMesage);
